@@ -1,0 +1,147 @@
+body {
+  font-family: 'Verdana', sans-serif;
+  background-color: #f1f1f1;
+  padding: 20px;
+  background-image: url('../img/fd679f5a-3d40-4503-96b9-b381b66d46a9.jfif');
+  background-position: center;
+  background-repeat: repeat;
+  
+  height: 100vh;
+}
+.text-color3 {
+  --tw-text-opacity: 1;
+  color: rgb(19 51 115 / var(--tw-text-opacity));
+}
+.text-5xl {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-secondary {
+  font-family: poppins;
+}
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.text-color1 {
+  --tw-text-opacity: 1;
+  color: rgb(32 149 174 / var(--tw-text-opacity));
+}
+
+#book-ticket-btn {
+  color: white; /* change the text color to black */
+  font-size: 22px; 
+  font-family: Arial, sans-serif; /* change the font family */
+}
+
+#book-ticket-btn h3 {
+  font-size: inherit; /* inherit the font size from the parent element */
+  font-family: inherit; /* inherit the font family from the parent element */
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ticket-form-box, .button-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 6%;
+  width: 520px;
+  height: 550px;
+}
+.center-btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select, input[type="date"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #45afcf;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 15px;
+  width: 60%;
+  height: 90px;
+  margin-top: 10px;
+  align-items: center;
+  text-align: center;
+}
+.ok-btnn {
+  background-color: #31ace6;
+  color: white;
+  transition: background-color 0.3s;
+  padding: 15px;
+  width: 30%;
+  height: 50px;
+  margin-top: 10px;
+  align-items: center;
+  text-align: center;
+  font-size: large;
+}
+.button-wrapper {
+  text-align: center;
+}
+
+button:hover {
+  background-color: #1d58c5;
+}
+
+.ticket-history-box {
+  margin-top: 20px;
+  background-color: rgba(255, 253, 253, 0.986);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+#history-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#history-table th, #history-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#history-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+#history-table td {
+  text-align: center;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  height: 50px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
