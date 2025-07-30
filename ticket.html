@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket</title>
+    <link rel="stylesheet" type="text/css" href="css/styl.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="ticket-form-box" style="align-items: center;">
+           <p class="text-color3 text-5xl font-bold uppercase font-secondary my-4" style="align-items: center;"> Passenger's Information Entry :</p>
+            <form id="ticket-form">
+                <input type="text" id="name" placeholder="Name" required><br>
+                <input type="email" id="email" placeholder="Email ID" required><br>
+                <input type="tel" id="phone" placeholder="Phone Number" required><br>
+                <input type="number" id="people" placeholder="Number of People" required><br>
+                <select id="tour" required>
+                    <option value="" >Select Tour</option>
+                    <option value="Tour 1">Agra</option>
+                    <option value="Tour 2">Dubai</option>
+                    <option value="Tour 3">Canada</option>
+                </select><br>
+                <select id="package" required>
+                    <option value="" >Select Package</option>
+                    <option value="Platinum">Platinum</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Bronze">Bronze</option>
+                    <option value="Custome">Custome</option>
+                </select><br>
+                <input type="date" id="date" required><br>
+            </form>
+        </div>
+        
+        <div class="button-box">
+            <div class="button-wrapper">
+                <p class="text-color3 text-5xl font-bold uppercase font-secondary my-4" >Book your ticket with <span class="text-color1">TRANQUIL TRAVELS</span></p>
+                <button id="book-ticket-btn" ><h3>Book Ticket</h3></button>
+            </div>
+            <div class="button-wrapper">
+                <button id="proceed-to-pay-btn" class="center-btn"style="display: none; font-size: 20px; font-family: Arial, sans-serif;"><h3>Proceed to Pay</h3></button>
+            </div>
+            <div class="button-wrapper">
+                <button id="view-history-btn" style="font-size: 20px; font-family: Arial, sans-serif;"><h3>View History</h3></button>
+            </div>
+            <div class="button-wrapper">
+                <button id="contact-btn " style="font-size: 20px; font-family: Arial, sans-serif;"><a href="index.html"><h3>Contact Us</h3></button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="ticket-history" class="ticket-history-box" style="display: none;">
+        <h3>Ticket History</h3>
+        <table id="history-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Ticket ID</th>
+                    <th>Tour</th>
+                    <th>Package</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="history-table-body">
+                <!-- Ticket history rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/jss.js"></script>
+
+</body>
+</html>
